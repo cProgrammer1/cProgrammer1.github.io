@@ -1,0 +1,56 @@
+body
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url(images/night_sky_medium.jpg);
+    
+}
+
+
+/* Structure: */
+
+#content 
+{
+    background: #ecf1fb;
+    color: #051326;
+    padding: 6px;
+    width: 90%;
+    margin: 5px;
+
+    /* Centers horizontally*/
+    /* margin: auto; */
+
+    border-radius: 8px;
+}
+
+
+/* Navigation: */
+
+#main-nav a 
+{
+    text-decoration: none;
+    color: rgb(213, 125, 25)
+
+}
+
+#main-nav a:hover
+{
+    color: #83408D;
+
+}
+
+
+/* Typography: */
+
+h1 
+{
+    color: #201259;
+}
+
+
+/* 
+References: 
+- https://color.adobe.com/search?q=Star%20Trek&t=term 
+- https://color.adobe.com/search?q=galaxy 
+
+
+*/

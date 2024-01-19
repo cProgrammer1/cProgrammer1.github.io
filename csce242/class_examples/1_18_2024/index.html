@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Author: Chrissy Dobrowolski 
+        -->
+        <title>Custom Title</title>
+        <!--
+            Link pointing towards styles.css 
+        -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <!--
+            Divider: allows for generic structure of webpage 
+        -->
+        <div id="content">
+                <header id="main-header">
+                    <h1>Main Heading</h1>
+                    <!-- 
+                        Navs -> lists 
+                        Pound symbol -> "just stay on this page" 
+                    -->
+                    <nav id="main-nav">
+                        <ul class="columns">
+                            <li><a href="#">Nav Item 1</a></li>
+                            <li><a href="#">Nav Item 2</a></li>
+                            <li><a href="#">Nav Item 3</a></li>
+                            <li><a href="#">Nav Item 4</a></li>
+                            <li><a href="#">Nav Item 5</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                <main id="main-content">
+                    <h2>Sub Heading</h2>
+
+                    <div class="columns">
+                        <section class="one">
+                            <h3>First Section</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis condimentum dignissim. Nulla sit amet augue 
+                                blandit, molestie lorem nec, tristique nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur 
+                                ridiculus mus. Nam volutpat neque in porttitor sodales. Curabitur nec turpis consectetur, bibendum nisl a, finibus eros.
+                                Sed fringilla aliquam consectetur. Quisque rutrum sapien non quam feugiat tincidunt. Etiam tempus vehicula elit, sed 
+                                accumsan lorem euismod sagittis. Aliquam at erat pretium, rhoncus tellus sed, mollis tortor. Aenean blandit imperdiet 
+                                nulla, at vestibulum nibh. Curabitur porttitor dui at sem porttitor, aliquam elementum magna aliquam. Ut euismod justo 
+                                ac orci suscipit, at sodales nulla volutpat. Nullam aliquam tincidunt metus, sed venenatis nibh facilisis non. Nunc 
+                                tincidunt lacus eu nisl elementum porta. Nunc dolor diam, tempor et nulla volutpat, gravida vulputate augue. Donec in 
+                                tincidunt quam. Proin non orci in orci condimentum sollicitudin. Donec at leo vitae justo pellentesque posuere ut ut 
+                                augue. 
+                            </p>
+                        </section>   
+                        <section class="one">
+                            <h3>Second Section</h3>
+                            <p>
+                                Vivamus nibh ipsum, faucibus ut orci in, sagittis fermentum ante. Vivamus id ante mauris. Proin commodo fermentum diam, 
+                                vitae vestibulum neque auctor non. Cras a lorem et magna lacinia gravida. Phasellus tristique sed eros nec iaculis. Nulla 
+                                imperdiet aliquam eleifend. Aenean a metus vitae nisl porttitor sodales eu quis sapien. Nullam nec justo ligula. Nunc 
+                                luctus maximus diam eget malesuada. Vivamus aliquam tristique ipsum at varius. Curabitur a ex non mi semper scelerisque et 
+                                sit amet ligula. Curabitur eget tortor ut ante accumsan tristique. Sed hendrerit nunc metus, tempor malesuada mauris 
+                                vulputate vel. Donec quis tortor nec velit rhoncus euismod vel a sem. Praesent pretium urna eu justo egestas porttitor.
+                            </p>
+                        </section>   
+                                      
+
+                    <div class="columns">
+                        <section class="one"><img src="https://place-hold.it/300x300" alt="Placeholder image"></section>
+                        <section class="one"><img src="https://place-hold.it/300x300" alt="Placeholder image"></section>
+                        <section class="one"><img src="https://place-hold.it/300x300" alt="Placeholder image"></section>
+                        <section class="one"><img src="https://place-hold.it/300x300" alt="Placeholder image"></section>
+                    </div>
+
+                </main>
+
+                <footer id="main-footer">
+                    <p>&copy; chrissydobrowolski</p>
+                </footer>
+        </div>
+    </body>
+
+</html>
+
+
+
+<!---
+Notes: 
+- Columns: 
+-- Makes direct children columnized: 
+    .Columns
+    {
+        display:flex;
+    }
+
+-- Ratio of columns taking up page: 
+    .two_cols OR one_of_two: 
+    {
+        flex:1;
+    }
+
+    .two_of_three: 
+    {
+        flex:2;
+    }
+
+-- Put only content want to columnize in div 
+-- Only apply columns for larger resolutions; design for MOBILE first 
+--- Apply flex AT THE END 
+
+
+Resources: 
+- https://www.w3schools.com/css/css_rwd_mediaqueries.asp 
+- https://place-hold.it/ 
+- https://color.adobe.com/ 
+- https://www.lipsum.com/feed/html 
+
+
+-->
+
