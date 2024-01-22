@@ -8,18 +8,20 @@ body
 
 /* Structure: */
 
-#content 
+#main-content 
 {
     background: #ecf1fb;
     color: #051326;
-    padding: 6px;
-    width: 90%;
+    padding: 2px;
+    width: 100%;
     margin: 5px;
 
     /* Centers horizontally*/
     /* margin: auto; */
 
-    border-radius: 8px;
+    border-radius: 10px;
+    text-align: center;
+
 }
 
 
@@ -38,12 +40,36 @@ body
 
 }
 
+.column2
+{
+    background-color:#25325b;
+    padding: 10px;
+    margin: 6px;
+    color:#ecf1fb;
+}
+
 
 /* Typography: */
 
 h1 
 {
     color: #201259;
+    text-align: center;
+}
+
+
+/* Larger Resolutions */ 
+@media (min-width: 900px)
+{
+    #main-nav .flex
+    {
+        display: flex;
+    }
+
+    #main-nav .column2
+    {
+        flex: 1;
+    }
 }
 
 
@@ -51,6 +77,5 @@ h1
 References: 
 - https://color.adobe.com/search?q=Star%20Trek&t=term 
 - https://color.adobe.com/search?q=galaxy 
-
 
 */
