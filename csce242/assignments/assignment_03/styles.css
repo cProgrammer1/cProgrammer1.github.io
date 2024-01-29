@@ -1,0 +1,115 @@
+/*
+    Created by Chrissy Dobrowolski 
+
+    CSCE 242- 001 
+
+*/
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#D9BD9C;
+}
+
+
+/* Structure */
+
+#main-content 
+{
+    list-style-type: none;
+    background: #F2DBAE;
+    padding: 5px;
+    width: 100%;
+    margin: 5px;
+
+    /* Centers horizontally */
+    margin: auto;
+    border: 1px solid #81A69B;
+    color: #1c4055;
+
+}
+
+#main-nav a
+{
+    text-decoration: none;
+    color: #F2DBAE;
+}
+
+#main-nav li
+{
+    list-style-type: none;
+    padding: 4px;
+    background-color: #81A69B;
+    border-bottom: 1px solid #F2DBAE;
+    text-align: center;
+    list-style-type: none;
+}
+
+.column2-1
+{
+    color: #1c4055;
+
+}
+
+.column2-2
+{
+    color: #1c4055;
+}
+
+#main-aside
+{
+    float: left;
+    padding-left: 5px;
+
+}
+
+.column4
+{
+    text-align: center;
+    color:  #faf6e3;
+}
+
+.column4-content
+{
+    background-color: #3A7D8C;
+}
+
+#main-footer
+{
+    color: #3A7D8C;
+    text-align: center;
+}
+
+
+/* Typography */
+
+h1 
+{
+    color: #1c4055;
+    text-align: center;
+}
+
+
+/* Larger Resolutions: */
+@media (min-width: 900px)
+{
+    #main-nav ul, 
+    .flex-box
+    {
+        display: flex;
+    }
+
+    #main-nav li,
+    .column6,
+    .column2-1
+    .column4
+    {
+        flex: 1;
+    }
+
+    .column2-2
+    {
+        flex: 2;
+    }
+
+}

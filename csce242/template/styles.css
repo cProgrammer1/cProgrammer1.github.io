@@ -1,0 +1,36 @@
+/*
+    Created by Chrissy Dobrowolski 
+
+    CSCE 242- 001 
+
+*/
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background:lightgray
+}
+
+
+/* Structure */
+
+#main-content 
+{
+    background: #fff;
+    padding: 5px;
+    width: 80%;
+    margin: 5px;
+
+    /* Centers horizontally */
+    margin: auto;
+
+    border-radius: 5px;
+}
+
+
+/* Typography */
+
+h1 
+{
+    color: darkslategray;
+}
