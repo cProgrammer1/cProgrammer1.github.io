@@ -31,19 +31,30 @@ img
 }
 */
 
+iframe
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 1200px;
+    height: 900px;
+}
+
 
 
 /* Navigation: */
 
-#flex1-nav a,
-#flex2-nav a
+#flex1-assignments-nav a,
+#flex2-assignments-nav a,
+#flex1-projects-nav a
 {
     text-decoration: none;
     color: rgb(213, 125, 25);
 }
 
-#flex1-nav a:hover,
-#flex2-nav a:hover
+#flex1-assignments-nav a:hover,
+#flex2-assignments-nav a:hover,
+#flex1-projects-nav a:hover
 {
     color: #83408D;
 }
@@ -98,8 +109,11 @@ h1
 
 
 /* 
-References: 
+
+Resources: 
 - https://color.adobe.com/search?q=Star%20Trek&t=term 
 - https://color.adobe.com/search?q=galaxy 
+- Wireframe resources: 
+-- https://www.lipsum.com/feed/html
 
 */
