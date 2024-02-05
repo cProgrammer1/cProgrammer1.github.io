@@ -15,13 +15,12 @@ let output = document.getElementByID("slider-range");
 output.innerHTML = slider.value;
 */
 
-
-
 /*
 let slider = document.getElementByID("slider-id");
 let sliderValue = slider.value;
 output.innerHTML = slider.value;
 */
+
 
 /* Functions: */ 
 
@@ -48,20 +47,20 @@ slider.oninput = showRange ()
 
 const addStar = () =>
 {
-    const starArea = document.getElementById("star-area");
+    console.log("Adding star");
     
-    console.log("adding star");
+    const starArea = document.getElementById("star-area");
 
     /* starArea.innerHTML += "<section class='star'></section>"; */
     
     
     const star = document.createElement("section");
+    starArea.append(star)
     star.classList.add("star");
-    starArea.append(star);
-
     star.style.background = red;
     
 };
+
 
 
 /* 
@@ -92,5 +91,6 @@ document.getElementById("changing-image").onclick = changeImage;
 /* document.getElementById("slider-id").oninput = rotateImage; */
 
 /* document.getElementById("starArea").addEventListener("click", addStar); */
+
 
 document.getElementById("starArea").onclick = addStar;
