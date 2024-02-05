@@ -1,0 +1,131 @@
+/*
+    Created by Chrissy Dobrowolski 
+    Semester Project Part 3: HTML and CSS  
+    CSCE 242- 001 
+    Due 2.4.2024 
+    
+*/
+
+
+:root
+{
+    /* Variables: */ 
+
+    /*- Colors: */ 
+    --background-color: white;
+    --p-color: black;
+    /*
+    --h1-color: black;
+    --h2-color: black;
+    */
+
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+/* Structure: */
+
+#about-content 
+{
+    background: var(--background-color);
+
+}
+
+/* - Header: */ 
+
+#header-nav li
+{
+    list-style-type: none;
+}
+
+#header-nav a
+{
+    text-decoration: none;
+    color: var(--p-color);
+}
+
+
+/* - Images: */ 
+
+img
+{
+    max-width: 100%;
+
+}
+
+/* Typography: */
+
+h1,
+h2
+{
+    text-align: left;
+    padding: 10px;
+
+}
+
+
+/* Larger Resolutions: */ 
+
+@media (min-width: 900px)
+{
+
+    /* Flex: */
+
+    #header-nav ul,
+    #species,
+    #carolina-wren,
+    #carolina-chickadee,
+    #tufted-titmouse,
+    #white-throated-sparrow,
+    #red-tailed-hawk,
+    #red-shouldered-hawk,
+    #coopers-hawk,
+    #turkey-vulture
+    {
+        display: flex;
+        padding-bottom: 50px;
+    }
+
+    .col1of5,
+    .col2of5,
+    .col3of5,
+    .col4of5,
+    .col5of5,
+    .cw-col2of2,
+    .cc-col2of2,
+    .tt-col2of2,
+    .wts-col2of2,
+    .rth-col2of2,
+    .rsh-col2of2,
+    .ch-col2of2,
+    .tv-col2of2
+    {
+        flex: 1;
+        padding-left: 10px;
+        padding-right: 50px;
+    }
+
+
+
+
+
+    /* Structure: */ 
+
+    #header-nav li
+    {
+        text-align: center;
+    }
+
+
+    /* Typography */ 
+    #birds-header p
+    {
+        text-align: center;
+    }
+
+}

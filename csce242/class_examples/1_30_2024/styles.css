@@ -1,20 +1,19 @@
 /*
     Created by Chrissy Dobrowolski 
-
+    Class Example 
+    1.30.2024 
     CSCE 242- 001 
 
 */
 
-
 body
 {
     font-family: Arial, Helvetica, sans-serif;
-    background:lightgray;
-    
+    background:lightgray
 }
 
 
-/* Structure: */
+/* Structure */
 
 #main-content 
 {
@@ -27,14 +26,32 @@ body
     margin: auto;
 
     border-radius: 5px;
+}
 
+#blueberries
+{
+    max-width: 20%;
+}
+
+.hidden
+{
+    display: none;
 }
 
 
-/* Typography: */
+
+
+/* Typography */
 
 h1 
 {
     color: darkslategray;
+}
 
+.special
+{
+    background: lightpink;
+    size: 2em;
+    color: magenta;
+    border: 2px dotted magenta;
 }
