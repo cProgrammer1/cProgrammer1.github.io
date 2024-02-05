@@ -52,8 +52,7 @@ const addStar = () =>
     const starArea = document.getElementById("star-area");
 
     /* starArea.innerHTML += "<section class='star'></section>"; */
-    
-    
+
     const star = document.createElement("section");
     starArea.append(star)
     star.classList.add("star");
