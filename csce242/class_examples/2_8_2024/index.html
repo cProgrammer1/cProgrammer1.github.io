@@ -1,0 +1,141 @@
+<!--
+    Created by Chrissy Dobrowolski 
+    Class Example 
+    2.8.2024 
+    CSCE 242- 001 
+    
+-->
+
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <!--
+            Author: Portia Plante
+        -->
+    <title>Custom Title</title>
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+
+  <body>
+
+    <div id="content">
+      <h1>Learning JavaScript</h1>
+
+      <div class="columns">
+
+        <section class="one">
+          <h3>Learning Gradients</h3>
+
+          <section id="rainbow">
+            
+          </section>
+
+        </section>
+
+        <section class="one">
+            
+            <h3>Gradient Changer</h3>
+
+            <p>Let's get to $10,000!</p>
+
+            <p>
+                <label for="txt-funds">Funds Earned: </label>
+                <input type="txt" id="txt-funds">
+                <span id="funds-error" class="error"></span>
+
+            </p>
+            <p>
+                <button id="btn-cont">Continue</button>
+            </p>
+
+            <section id="thermometer">
+
+
+
+            </section>
+
+        </section>
+
+        <section>
+
+          <h3>Forms and Numbers</h3>
+
+          <form id="my-form" action="#" method="get">
+
+
+              <p>
+                
+                <!-- Forms go based off of name rather than ID -->
+                <label for="txt-first-name">First Name:</label>
+
+                <!-- "required" -> if no input B4 clicking button, creates pop-up saying that this field is required -->
+                <input name="txt-first-name" required>
+
+                <!-- Notice how class identifies CATEGORY of element, while ID is like name / unique identifier for that particular one! -->
+                <!-- <span class="error" id="error-first-name"></span> --> 
+
+              </p>
+
+              <p>
+
+                <label for="txt-last-name">Last Name:</label>
+                <input name="txt-last-name">
+                <!-- <span class="error" id="error-last-name"></span> -->
+
+              </p>
+
+              <p>
+
+                <label for="txt-age">Age:</label>
+                <input type="number" min="18" name="txt-age">
+                <!-- <span class="error" id="error-age"></span> --> 
+
+              </p>
+
+              <p>
+
+                <label for="txt-birthday">Birthday:</label>
+                <input type="date">
+
+              </p>
+
+              <p>
+
+                <label for="txt-email">Email:</label>
+                <input type="email">
+
+              </p>
+
+              <!-- Shouldn't need to give button ID ever bc tied to form -->
+              <button type="submit">Continue</button>
+
+          </form>
+
+          
+
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
+
+
+<!-- 
+
+    - Notes: 
+        - ID identifies like name for one single element, while class is like category that can apply to multiple elements! 
+        - Potential resource: https://cssgradient.io/ 
+        - Cna use HTML5 (as opposed to JavaScript) for majority of validation 
+        
+ -->

@@ -41,7 +41,6 @@ iframe
 }
 
 
-
 /* Navigation: */
 
 #flex1-assignments-nav a,
@@ -63,7 +62,8 @@ iframe
 .flex1-column2,
 .flex1-column3,
 .flex2-column1,
-.flex2-column2
+.flex2-column2,
+.flex2-column3
 {
     background-color:#25325b;
     padding: 10px;
@@ -102,11 +102,13 @@ h1
         flex: 1;
     }
 
-    .flex2-column1,
-    .flex2-column2
+    .flex2-column1
+    .flex2-column2,
+    .flex2-column3
     {
         flex: 1;
     }
+
 }
 
 
