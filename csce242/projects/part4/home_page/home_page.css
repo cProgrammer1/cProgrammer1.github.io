@@ -11,12 +11,12 @@
     /* Variables: */ 
 
     /*- Colors: */ 
-    --background-color: white;
-    --p-color: black;
-    /*
-    --h1-color: black;
-    --h2-color: black;
-    */
+    --background-color: #F2F2F2;
+    --foreground-color: #593520;
+    --h1-color: #BF8C60;
+    --h2-color: #2e1009;
+    --p-color: #2e1009;
+    --img-header-color: #8C8A6D;
 
 }
 
@@ -36,6 +36,17 @@ body
 }
 
 /* - Header: */ 
+
+/* 
+#home-header
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px;
+
+}
+*/ 
 
 #header-nav li
 {
@@ -57,6 +68,7 @@ img
 
 }
 
+
 /* -- Main home image: */ 
 
 #home-image img
@@ -71,17 +83,96 @@ img
 {
     text-align: right;
     padding-right: 10px;
+    color: var(--p-color)
+}
+
+
+/* Shapes: */ 
+
+.rectangle
+{
+    width: 100px;
+    height: 100px;
+    
+}
+
+#header-rectangle
+{
+    width: 1470px;
+    height: 100px;
+    background-color: var(--img-header-color);
+}
+
+#footer-rectangle
+{
+    width: 1470px;
+    height: 75px;
+    background-color: var(--img-header-color);
+}
+
+
+/* Images: */ 
+
+#mbs_logo
+{
+    width: 40px;
+    height: 40px;
+
+}
+
+
+/* Other: */ 
+
+.col2off2
+{
+    background-color: var(--h1-color);
+    
 }
 
 
 /* Typography: */
 
-h1,
+#top-text
+{
+    font-size: 30px;
+    color: var(--p-color)
+
+}
+
+#main-text
+{
+    margin-bottom: 176px;
+    color: var(--p-color)
+}
+
+#main-text,
+#bottom-text
+{
+    font-size: 20px;
+    color: var(--p-color)
+
+}
+
+#h1-title
+{
+    background-color: var(--foreground-color);
+    text-align: center;
+    padding: 20px;
+}
+
+h1
+{
+    text-align: center;
+    color: var(--h1-color);
+}
+
 h2
 {
     text-align: center;
+    color: var(--h2-color);
 
 }
+
 
 
 
@@ -97,6 +188,12 @@ h2
     #header-nav ul
     {
         display: flex;
+
+    }
+
+    .col2of5 p
+    {
+        display: inline;
     }
 
     .col1of5,
@@ -107,24 +204,37 @@ h2
     .col2of2
     {
         flex: 1;
+
     }
 
     .col1of2
     {
         flex: 2;
         padding-left: 20px;
+        padding-right: 20px;
+
     }
 
     .col2of2
     {
+        /* width: 30px; */
         padding-left: 50px;
-        padding-right: 50px;
+        padding-right: 20px;
+
+        background-color: var(--h1-color);
+
+    }
+
+    #home-image
+    {
+        margin-top: 30px;
     }
 
     #bottom-text
     {
         padding-left: 20px;
         padding-right: 500px;
+
     }
 
     /* Structure: */ 
@@ -132,6 +242,7 @@ h2
     #header-nav li
     {
         text-align: center;
+
     }
 
 }

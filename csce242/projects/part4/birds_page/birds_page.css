@@ -12,13 +12,12 @@
     /* Variables: */ 
 
     /*- Colors: */ 
-    --background-color: white;
-    --p-color: black;
-    --h3-color: black;
-    /*
-    --h1-color: black;
-    --h2-color: black;
-    */
+    --background-color: #F2F2F2;
+    --foreground-color: #593520;
+    --h1-color: #BF8C60;
+    --h2-color: #2e1009;
+    --p-color: #2e1009;
+    --img-header-color: #8C8A6D;
 
 }
 
@@ -31,7 +30,7 @@ body
 
 /* Structure: */
 
-#about-content 
+#birds-content 
 {
     background: var(--background-color);
 
@@ -51,11 +50,42 @@ body
 }
 
 
+/* Shapes: */ 
+
+.rectangle
+{
+    width: 100px;
+    height: 100px;
+    
+}
+
+#header-rectangle
+{
+    width: 1470px;
+    height: 100px;
+    background-color: var(--img-header-color);
+}
+
+#footer-rectangle
+{
+    width: 1470px;
+    height: 75px;
+    background-color: var(--img-header-color);
+}
+
+
 /* - Images: */ 
 
 img
 {
     max-width: 100%;
+
+}
+
+#mbs_logo
+{
+    width: 40px;
+    height: 40px;
 
 }
 
@@ -86,6 +116,19 @@ h2
 
 }
 
+#cw-info,
+#cc-info,
+#tt-info,
+#wts-info,
+#rth-info,
+#rsh-info,
+#ch-info,
+#tv-info
+{
+    font-size: 20px;
+
+}
+
 
 /* Larger Resolutions: */ 
 
@@ -109,6 +152,11 @@ h2
         padding-bottom: 50px;
     }
 
+    .col2of5 p
+    {
+        display: inline;
+    }
+
     .col1of5,
     .col2of5,
     .col3of5,
@@ -127,9 +175,6 @@ h2
         padding-left: 10px;
         padding-right: 50px;
     }
-
-
-
 
 
     /* Structure: */ 

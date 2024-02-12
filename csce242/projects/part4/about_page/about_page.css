@@ -12,12 +12,12 @@
     /* Variables: */ 
 
     /*- Colors: */ 
-    --background-color: white;
-    --p-color: black;
-    /*
-    --h1-color: black;
-    --h2-color: black;
-    */
+    --background-color: #F2F2F2;
+    --foreground-color: #593520;
+    --h1-color: #BF8C60;
+    --h2-color: #2e1009;
+    --p-color: #2e1009;
+    --img-header-color: #8C8A6D;
 
 }
 
@@ -49,6 +49,37 @@ body
     color: var(--p-color);
 }
 
+#main-about-text a
+{
+    text-decoration: none;
+    color: var(--foreground-color);
+
+}
+
+
+/* Shapes: */ 
+
+.rectangle
+{
+    width: 100px;
+    height: 100px;
+    background-color: var(--img-header-color);
+}
+
+#header-rectangle
+{
+    width: 1470px;
+    height: 100px;
+    background-color: var(--img-header-color);
+}
+
+#footer-rectangle
+{
+    width: 1470px;
+    height: 75px;
+    background-color: var(--img-header-color);
+}
+
 
 /* - Images: */ 
 
@@ -56,6 +87,21 @@ img
 {
     max-width: 100%;
 
+}
+
+/* Images: */ 
+
+#mbs_logo
+{
+    width: 40px;
+    height: 40px;
+
+}
+
+#mbs-logo-main
+{
+    width: 300px;
+    height: 300px;
 }
 
 #about-image
@@ -85,6 +131,31 @@ h2
 #main-about-text
 {
     padding: 10px;
+    font-size: 20px;
+}
+
+#h1-title
+{
+    background-color: var(--foreground-color);
+    text-align: center;
+    padding: 5px;
+}
+
+h1
+{
+    color: var(--h1-color);
+}
+
+h2
+{
+    color: var(--h2-color);
+
+}
+
+#link-to-gg
+{
+    font-size: 20px;
+
 }
 
 
@@ -98,6 +169,11 @@ h2
     #header-nav ul
     {
         display: flex;
+    }
+
+    .col2of5 p
+    {
+        display: inline;
     }
 
     .col1of5,
