@@ -45,7 +45,8 @@ iframe
 
 #flex1-assignments-nav a,
 #flex2-assignments-nav a,
-#flex1-projects-nav a
+#flex1-projects-nav a,
+#flex2-projects-nav a
 {
     text-decoration: none;
     color: rgb(213, 125, 25);
@@ -53,7 +54,8 @@ iframe
 
 #flex1-assignments-nav a:hover,
 #flex2-assignments-nav a:hover,
-#flex1-projects-nav a:hover
+#flex1-projects-nav a:hover,
+#flex2-projects-nav a:hover
 {
     color: #83408D;
 }
