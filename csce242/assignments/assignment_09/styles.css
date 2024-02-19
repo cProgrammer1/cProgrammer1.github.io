@@ -1,0 +1,304 @@
+/*
+    Created by Chrissy Dobrowolski 
+    Assignment 9- Loops 
+    CSCE 242- 001 
+    Due: 2.18.2024 
+
+*/
+
+/* SMALLER RESOLUTIONS: */ 
+
+:root
+{
+    --h1-color: #e9770c;
+    --h2-color: #A6330A;
+    --h3-color: #A6330A;
+    --p-color: #401607;
+    --nav-color: #486092;
+    --nav-a-background-color: #e0d4fb;
+    --main-background-color: #fff4d3;
+    --ball-background-color: #FFFFFF;
+    --main-column-background-color: #f5c944;
+
+    --ball-top: 0px;
+
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--main-background-color);
+}
+
+
+/* - Structure: */
+
+#main-content
+{
+    margin: 5px;
+
+}
+
+
+/* -- Nav: */
+
+/* --- Exercise nav bar: */
+
+#nav-exercise-1 a,
+#nav-exercise-2 a
+{
+    text-decoration: none;
+    color: var(--nav-color);
+    
+}
+
+#nav-exercise-1 a:hover,
+#nav-exercise-2 a:hover
+{
+    background-color: var(--nav-a-background-color);
+}
+
+#pipe-symbol
+{
+    display: none;
+}
+
+
+/* ---- Triangle toggle menu: */ 
+
+.triangle-down
+{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid var(--p-color);
+    
+}
+
+.triangle-up
+{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid var(--p-color);
+    
+}
+
+
+/* --- Image credits nav: */
+
+#ball-image-credits a
+{
+    color: var(--nav-color);
+}
+
+#ball-image-credits a:hover
+{
+    background-color: var(--nav-a-background-color);
+}
+
+
+/* -- Exercise content: */
+
+#exercise-1-content,
+#exercise-2-content
+{
+    background: var(--main-column-background-color);
+    border: 1px solid var(--p-color);
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+#ball-start-stop-click
+{
+    text-decoration: underline;
+
+}
+
+#bounce-ball-box
+{
+    border: 1px solid #401607;
+    background-color: var(--ball-background-color);
+    width: 100px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#e-1-image
+{   
+    position: relative;
+    
+    top: var(--ball-top);
+
+}
+
+#ball-image-credits p
+{
+    text-align: left;
+    color: var(--p-color);
+    
+}
+
+#exercise-2-content
+{
+    color: var(--p-color);
+}
+
+#yoga-poses
+{
+    padding-left: 0px;
+
+}
+
+img
+{
+    max-width: 50%;
+    display: inline;
+    /* margin-left: auto; */
+    /* margin-right: auto;  */
+
+}
+
+#yoga-poses
+{
+    text-align: left;
+
+}
+
+.e-2-image
+{
+    margin-left: 0;
+    padding-left: 0px;
+    
+}
+
+#e-2-images-credits p,
+#e-2-descriptions-credits p
+{
+    text-align: left;
+    color: var(--p-color);
+    
+}
+
+#e-2-images-credits a,
+#e-2-descriptions-credits a
+{
+    color: var(--nav-color);
+}
+
+#e-2-images-credits a:hover,
+#e-2-descriptions-credits a:hover
+{
+    background-color: var(--nav-a-background-color);
+}
+
+
+/* - Typography: */
+
+h1 
+{
+    text-align: center;
+    color: var(--h1-color);
+
+}
+
+h2
+{
+    text-align: center;
+    color: var(--h2-color);
+}
+
+h3
+{
+    text-align: center;
+    color: var(--h3-color);
+}
+
+p
+{
+    text-align: center;
+    color: var(--p-color);
+}
+
+
+span
+{
+    padding-left: 20px;
+
+} 
+
+
+
+/* - Other: */ 
+
+.hidden
+{
+    display: none;
+}
+
+
+/* Larger Resolutions: */ 
+
+@media (min-width: 900px)
+{
+
+    /* - Structure: */
+
+    #main-content
+    {
+        text-align: center;
+
+    }
+
+
+    /* -- Exercise content: */
+
+    
+    #exercise-1-content
+    {
+        width: 550px;
+        
+    }
+
+    #exercise-2-content
+    {
+        width: 550px;
+        
+    }
+
+
+    /* -- Nav: */
+
+    /* --- Exercise nav bar: */
+
+    #nav-exercise-1,
+    #nav-exercise-2
+    {
+        display: inline;
+        text-align: center;
+
+    }
+
+    #pipe-symbol
+    {
+        display: inline;
+        color: var(--nav-color);
+    }
+
+
+    /* ---- Triangle toggle menu: */ 
+
+    .triangle-down,
+    .triangle-up
+    {
+        display: none;
+        
+    }
+
+}

@@ -1,0 +1,92 @@
+<!--
+    Created by Chrissy Dobrowolski 
+    Class Example 
+    2.15.2024 
+    CSCE 242- 001 
+    
+-->
+
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <!--
+            Author: Portia Plante
+        -->
+    <title>Custom Title</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+
+  <body>
+
+    <div id="content">
+
+      <h1>Learning JavaScript</h1>
+
+      <div class="columns">
+
+        <section class="one">
+
+          <h3>Looping Through Numbers</h3>
+
+          <p>
+            <!-- OR could label "in-start-num" for input -->
+            <label for ="txt-start-num">Enter Starting Number:</label>
+            <input type="text" id="txt-start-num">
+          </p>
+
+          <p>
+            <label for ="txt-end-num">Enter Ending Number:</label>
+            <input type="text" id="txt-end-num">
+          </p>
+
+          <button id="btn-loop-nums">Show Numbers</button>
+
+          <!-- Create seperate space/area for error so can style it, etc.; separate element -->
+          <p id="error-nums" class="error"></p>
+
+          <ul id="num-list"></ul>
+
+        </section>
+
+
+        <section class="one">
+
+          <h3>Counting</h3>
+          <button id="btn-count">Start</button>
+          <!-- Paragraph where number inside will be changing -->
+          <p id="count-p"></p>
+
+        </section>
+        
+
+        <section>
+          
+          <h3>List Item Clicks</h3>
+
+          <ul id="toys">
+
+            <!-- "rel" -> attribute -->
+            <li rel="The coolest mini cars.">Matchbox car</li>
+            <li rel="Like a real baby but not.">Baby Doll</li>
+            <li rel="Exercise and fun.">Skipping Rope</li>
+            <li rel="Mini fun for all.">Toy House</li>
+            <li rel="A whole day of sports.">Soccer Ball</li>
+
+          </ul>
+
+        </section>
+
+      </div>
+      
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
