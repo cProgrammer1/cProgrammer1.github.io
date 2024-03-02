@@ -69,7 +69,8 @@ iframe
 .flex2-column2,
 .flex2-column3,
 .flex3-column1,
-.flex3-column2
+.flex3-column2,
+.flex3-column3
 {
     background-color:#25325b;
     padding: 10px;
@@ -103,7 +104,7 @@ h1
 
     
     .flex1-column1,
-    .flex1-column2,
+    .flex1-column2
     .flex1-column3
     {
         flex: 1;
@@ -113,7 +114,8 @@ h1
     .flex2-column2,
     .flex2-column3,
     .flex3-column1,
-    .flex3-column2
+    .flex3-column2,
+    .flex3-column3
     {
         flex: 1;
     }
