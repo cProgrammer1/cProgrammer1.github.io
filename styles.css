@@ -46,6 +46,7 @@ iframe
 #flex1-assignments-nav a,
 #flex2-assignments-nav a,
 #flex3-assignments-nav a,
+#flex4-assignments-nav a,
 #flex1-projects-nav a,
 #flex2-projects-nav a
 {
@@ -56,6 +57,7 @@ iframe
 #flex1-assignments-nav a:hover,
 #flex2-assignments-nav a:hover,
 #flex3-assignments-nav a:hover,
+#flex4-assignments-nav a:hover,
 #flex1-projects-nav a:hover,
 #flex2-projects-nav a:hover
 {
@@ -70,7 +72,9 @@ iframe
 .flex2-column3,
 .flex3-column1,
 .flex3-column2,
-.flex3-column3
+.flex3-column3,
+.flex4-column1
+
 {
     background-color:#25325b;
     padding: 10px;
@@ -97,25 +101,23 @@ h1
     #main-nav, 
     .flex1,
     .flex2,
-    .flex3
+    .flex3,
+    .flex4
     {
         display: flex;
     }
 
     
     .flex1-column1,
-    .flex1-column2
-    .flex1-column3
-    {
-        flex: 1;
-    }
-
-    .flex2-column1
+    .flex1-column2,
+    .flex1-column3,
+    .flex2-column1,
     .flex2-column2,
     .flex2-column3,
     .flex3-column1,
     .flex3-column2,
-    .flex3-column3
+    .flex3-column3,
+    .flex4-column1
     {
         flex: 1;
     }

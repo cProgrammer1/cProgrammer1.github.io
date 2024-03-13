@@ -87,7 +87,7 @@ showShoes();
     - Synchronous: 
         - a -> b -> c 
 
-    - Asynchrnous: 
+    - Asynchronous: 
         - In the background; waiting to get something from somewhere else 
         - e.g. 
             - a and b can happen at same time; then c can happen 
