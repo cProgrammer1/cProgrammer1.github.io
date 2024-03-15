@@ -1,3 +1,10 @@
+/*
+    Created by Chrissy Dobrowolski 
+    CSCE 242- 001 
+    - Used for subsequent assignments 
+*/
+
+
 body
 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -21,6 +28,7 @@ body
 
     border-radius: 10px;
     text-align: center;
+
 }
 
 /* 
@@ -28,6 +36,7 @@ img
 {
     border-color: #ecf1fb;
     border-width: 5px;
+
 }
 */
 
@@ -38,6 +47,7 @@ iframe
     text-align: center;
     width: 450px;
     height: 300px;
+
 }
 
 
@@ -52,6 +62,7 @@ iframe
 {
     text-decoration: none;
     color: rgb(213, 125, 25);
+
 }
 
 #flex1-assignments-nav a:hover,
@@ -62,6 +73,7 @@ iframe
 #flex2-projects-nav a:hover
 {
     color: #83408D;
+
 }
 
 .flex1-column1,
@@ -73,13 +85,15 @@ iframe
 .flex3-column1,
 .flex3-column2,
 .flex3-column3,
-.flex4-column1
+.flex4-column1,
+.flex4-column2
 
 {
     background-color:#25325b;
     padding: 10px;
     margin: 6px;
     color:#ecf1fb;
+
 }
 
 
@@ -90,9 +104,20 @@ h1
 {
     color: #201259;
     text-align: center;
+
 }
 
+.unbolded
+{
+    font-weight: normal;
 
+}
+
+#assignment-13-title
+{
+    color: rgb(213, 125, 25);
+
+}
 
 
 /* Larger Resolutions: */ 
@@ -117,20 +142,10 @@ h1
     .flex3-column1,
     .flex3-column2,
     .flex3-column3,
-    .flex4-column1
+    .flex4-column1,
+    .flex4-column2
     {
         flex: 1;
     }
 
 }
-
-
-/* 
-
-Resources: 
-- https://color.adobe.com/search?q=Star%20Trek&t=term 
-- https://color.adobe.com/search?q=galaxy 
-- Wireframe resources: 
--- https://www.lipsum.com/feed/html
-
-*/
