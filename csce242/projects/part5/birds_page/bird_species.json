@@ -1,0 +1,188 @@
+[
+    {
+        "id": "Carolina Wren",
+        "image_name": "Carolina_Wren_Birds_Page_Photo.JPG",
+        "broad_identifiers": 
+            [
+                "Type: Wren", 
+                "Scientific Name: Thryothorus ludovicianus", 
+                "Common on Campus?: Yes"
+
+            ],
+        "USC_area": "Thickets",
+        "diet": "Mainly insects; may visit feeders",
+        "fun_fact": "Carolina wrens can often be heard singing loudly in the mornings.",
+        "photo_credits": "Photo by Chrissy Dobrowolski",
+        "info_credits": 
+            [
+                "https://www.allaboutbirds.org/guide/Carolina_Wren/", 
+                "https://www.audubon.org/field-guide/bird/carolina-wren"
+
+            ]
+
+    },
+
+    {
+        "id": "Black-and-white Warbler",
+        "image_name": "Black-and-white_Warbler__Birds_Page_Photo.JPG",
+        "broad_identifiers": 
+            [
+                "Type: Warbler", 
+                "Scientific Name: Mniotilta varia", 
+                "Common on Campus?: Yes"
+            ],
+        "USC_area": "On tree trunks or branches",
+        "diet": "Insects",
+        "fun_fact": "Black-and-white Warblers can be easily identified by their zebra-like color pattern.",
+        "photo_credits": "Photo by Chrissy Dobrowolski",
+        "info_credits": 
+            [
+                "https://www.allaboutbirds.org/guide/Black-and-white_Warbler", 
+                "https://www.audubon.org/field-guide/bird/black-and-white-warbler",
+                "Merlin Bird ID app, using the US: Southeast bird pack"
+
+            ]
+
+    },
+
+    {
+        "id": "Eastern Phoebe",
+        "image_name": "Eastern_Phoebe_Birds_Page_Photo.JPG",
+        "broad_identifiers": 
+            [
+                "Type: Flycatcher", 
+                "Scientific Name: Sayornis phoebe", 
+                "Common on Campus?: Yes"
+            ],
+        "USC_area": "On tree or bush branches",
+        "diet": "Insects; often berries in winter",
+        "fun_fact": "Eastern Phoebe's songs sound like they're saying \"Phoebe!\".",
+        "photo_credits": "Photo by Chrissy Dobrowolski",
+        "info_credits": 
+            [
+                "https://www.allaboutbirds.org/guide/Eastern_Phoebe",
+                "https://www.audubon.org/field-guide/bird/eastern-phoebe",
+                "Merlin Bird ID app, using the US: Southeast bird pack"
+
+            ]
+
+    },
+
+    {
+        "id": "White-throated Sparrow",
+        "image_name": "White-throated_Sparrow_Birds_Page_Photo.JPG",
+        "broad_identifiers": 
+            [
+                "Type: Sparrow", 
+                "Scientific Name: Zonotrichia albicollis", 
+                "Common on Campus?: Yes, except during summer"
+            ],
+        "USC_area": "Near Thickets",
+        "diet": "Insects and seeds; berries in fall",
+        "fun_fact": "The White-thoated sparrow is one of the most common sparrow species in the winter here.",
+        "photo_credits": "Photo by Chrissy Dobrowolski",
+        "info_credits": 
+            [
+                "https://www.allaboutbirds.org/guide/White-throated_Sparrow",
+                "https://www.audubon.org/field-guide/bird/white-throated-sparrow",
+                "Merlin Bird ID app, using the US: Southeast bird pack"
+
+            ]
+        
+
+    },
+
+    {
+        "id": "Northern Cardinal",
+        "image_name": "Northern_Cardinal_Male_Birds_Page_Photo.JPG",
+        "broad_identifiers": 
+            [
+                "Type: Cardinal", 
+                "Scientific Name: Cardinalis cardinalis", 
+                "Common on Campus?: Yes"
+            ],
+        "USC_area": "Almost everywhere",
+        "diet": "Insects, seeds, and berries",
+        "fun_fact": "Northern Cardinal songs sound like very clear whistles. A male is shown here singing.",
+        "photo_credits": "Photo by Chrissy Dobrowolski",
+        "info_credits": 
+            [
+                "https://www.allaboutbirds.org/guide/Northern_Cardinal",
+                "https://www.audubon.org/field-guide/bird/northern-cardinal"
+
+            ]
+        
+
+    },
+
+    {
+        "id": "American Robin",
+        "image_name": "American_Robin_Birds_Page_Photo.JPG",
+        "broad_identifiers": 
+            [
+                "Type: Thrush", 
+                "Scientific Name: Turdus migratorius", 
+                "Common on Campus?: Yes"
+            ],
+        "USC_area": "Almost everywhere",
+        "diet": "Insects, earthworms, and berries",
+        "fun_fact": "American Robins can often be seen flying between trees and the ground on the Horseshoe.",
+        "photo_credits": "Photo by Chrissy Dobrowolski",
+        "info_credits": 
+            [
+                "https://www.allaboutbirds.org/guide/American_Robin",
+                "https://www.audubon.org/field-guide/bird/american-robin"
+
+            ]
+        
+
+    },
+
+    {
+        "id": "Northern Mockingbird",
+        "image_name": "Northern_Mockingbird_Birds_Page_Photo.JPG",
+        "broad_identifiers": 
+            [
+                "Type: Mockingbird", 
+                "Scientific Name: Mimus polyglottos", 
+                "Common on Campus?: Yes"
+            ],
+        "USC_area": "Almost everywhere",
+        "diet": "Insects and berries",
+        "fun_fact": "Northern Mockingbirds are well-known masters of mimicry.",
+        "photo_credits": "Photo by Chrissy Dobrowolski",
+        "info_credits": 
+            [
+                "https://www.allaboutbirds.org/guide/Northern_Mockingbird",
+                "https://www.audubon.org/field-guide/bird/northern-mockingbird",
+                "Merlin Bird ID app, using the US: Southeast bird pack"
+
+            ]
+        
+
+    },
+
+    {
+        "id": "Cooper's Hawk",
+        "image_name": "Cooper's_Hawk_Birds_Page_Photo.JPG",
+        "broad_identifiers": 
+            [
+                "Type: Accipiter", 
+                "Scientific Name: Accipiter cooperii", 
+                "Common on Campus?: Somewhat"
+            ],
+        "USC_area": "In/Around the Horseshoe",
+        "diet": "Small mammals and birds",
+        "fun_fact": "Cooper's Hawks are sometimes heard calling on the Horseshoe.",
+        "photo_credits": "Photo by Chrissy Dobrowolski",
+        "info_credits": 
+            [
+                "https://www.allaboutbirds.org/guide/Coopers_Hawk",
+                "https://www.audubon.org/field-guide/bird/coopers-hawk",
+                "Merlin Bird ID app, using the US: Southeast bird pack"
+
+            ]
+        
+    }
+
+]

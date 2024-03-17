@@ -149,7 +149,7 @@ const getHousesSection = (house) =>
 
     });
 
-
+    
     return house_section;
 
 };
