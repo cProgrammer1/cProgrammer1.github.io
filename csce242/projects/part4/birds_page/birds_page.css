@@ -1,0 +1,194 @@
+/*
+    Created by Chrissy Dobrowolski 
+    Semester Project Part 3: HTML and CSS  
+    CSCE 242- 001 
+    Due 2.4.2024 
+    
+*/
+
+
+:root
+{
+    /* Variables: */ 
+
+    /*- Colors: */ 
+    --background-color: #F2F2F2;
+    --foreground-color: #593520;
+    --h1-color: #BF8C60;
+    --h2-color: #2e1009;
+    --p-color: #2e1009;
+    --img-header-color: #8C8A6D;
+
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+/* Structure: */
+
+#birds-content 
+{
+    background: var(--background-color);
+
+}
+
+/* - Header: */ 
+
+#header-nav li
+{
+    list-style-type: none;
+}
+
+#header-nav a
+{
+    text-decoration: none;
+    color: var(--p-color);
+}
+
+
+/* Shapes: */ 
+
+.rectangle
+{
+    width: 100px;
+    height: 100px;
+    
+}
+
+#header-rectangle
+{
+    width: 1470px;
+    height: 100px;
+    background-color: var(--img-header-color);
+}
+
+#footer-rectangle
+{
+    width: 1470px;
+    height: 75px;
+    background-color: var(--img-header-color);
+}
+
+
+/* - Images: */ 
+
+img
+{
+    max-width: 100%;
+
+}
+
+#mbs_logo
+{
+    width: 40px;
+    height: 40px;
+
+}
+
+/* Bird content: */ 
+
+.cw-col2of2 a,
+.cc-col2of2 a,
+.tt-col2of2 a,
+.wts-col2of2 a,
+.rth-col2of2 a,
+.rsh-col2of2 a,
+.ch-col2of2 a,
+.tv-col2of2 a
+{
+    text-decoration: none;
+    color: var(--h3-color);
+}
+
+
+
+/* Typography: */
+
+h1,
+h2
+{
+    text-align: left;
+    padding: 10px;
+
+}
+
+#cw-info,
+#cc-info,
+#tt-info,
+#wts-info,
+#rth-info,
+#rsh-info,
+#ch-info,
+#tv-info
+{
+    font-size: 20px;
+
+}
+
+
+/* Larger Resolutions: */ 
+
+@media (min-width: 900px)
+{
+
+    /* Flex: */
+
+    #header-nav ul,
+    #species,
+    #carolina-wren,
+    #carolina-chickadee,
+    #tufted-titmouse,
+    #white-throated-sparrow,
+    #red-tailed-hawk,
+    #red-shouldered-hawk,
+    #coopers-hawk,
+    #turkey-vulture
+    {
+        display: flex;
+        padding-bottom: 50px;
+    }
+
+    .col2of5 p
+    {
+        display: inline;
+    }
+
+    .col1of5,
+    .col2of5,
+    .col3of5,
+    .col4of5,
+    .col5of5,
+    .cw-col2of2,
+    .cc-col2of2,
+    .tt-col2of2,
+    .wts-col2of2,
+    .rth-col2of2,
+    .rsh-col2of2,
+    .ch-col2of2,
+    .tv-col2of2
+    {
+        flex: 1;
+        padding-left: 10px;
+        padding-right: 50px;
+    }
+
+
+    /* Structure: */ 
+
+    #header-nav li
+    {
+        text-align: center;
+    }
+
+
+    /* Typography */ 
+    #birds-header p
+    {
+        text-align: center;
+    }
+
+}

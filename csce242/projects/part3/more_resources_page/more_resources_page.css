@@ -1,0 +1,134 @@
+/*
+    Created by Chrissy Dobrowolski 
+    Semester Project Part 3: HTML and CSS  
+    CSCE 242- 001 
+    Due 2.4.2024 
+    
+*/
+
+
+:root
+{
+    /* Variables: */ 
+
+    /*- Colors: */ 
+    --background-color: white;
+    --p-color: black;
+    /*
+    --h1-color: black;
+    --h2-color: black;
+    */
+
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+/* Structure: */
+
+#about-content 
+{
+    background: var(--background-color);
+
+}
+
+/* - Header: */ 
+
+#header-nav li
+{
+    list-style-type: none;
+}
+
+#header-nav a
+{
+    text-decoration: none;
+    color: var(--p-color);
+}
+
+
+/* - More Resources text: */ 
+
+#more-resources-text p
+{
+    padding-left: 10px;
+}
+
+#more-resources-nav a
+{
+    text-decoration: none;
+    color: var(--p-color);
+}
+
+
+/* - Images: */ 
+
+img
+{
+    max-width: 100%;
+
+}
+
+#about-image
+{
+    padding-left: 10px;
+    padding-bottom: 200px;
+}
+
+
+/* Typography: */
+
+h1,
+h2
+{
+    text-align: left;
+    padding: 10px;
+
+}
+
+#main-about-text
+{
+    padding: 10px;
+}
+
+
+/* Larger Resolutions: */ 
+
+@media (min-width: 900px)
+{
+
+    /* Flex: */
+
+    #header-nav ul
+    {
+        display: flex;
+    }
+
+    .col1of5,
+    .col2of5,
+    .col3of5,
+    .col4of5,
+    .col5of5
+    {
+        flex: 1;
+    }
+
+
+    /* Structure: */ 
+
+    #header-nav li
+    {
+        text-align: center;
+    }
+
+
+    /* Typography */ 
+    #about-header p
+    {
+        text-align: center;
+    }
+
+}

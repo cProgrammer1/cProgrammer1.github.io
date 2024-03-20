@@ -1,0 +1,254 @@
+<!--
+    Created by Chrissy Dobrowolski 
+    Semester Project Part 6: Client Side Form Validation and JavaScript 
+    CSCE 242- 001 
+    Due 3.19.2024 
+    
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>About MBS</title>
+        <link rel="stylesheet" href="about_page.css">
+
+    </head>
+
+    <body>
+
+        <div id="about-content">
+
+            <header id="about-header">
+
+                <img id="mbs_logo" src="images/M_B_S_Logo.jpg" alt="Image of Midlands Bird Society logo">
+                <h1 id="main-title">Birds of USC</h1>
+
+                <!-- <img src="https://place-hold.it/1470x150" alt="Placeholder image"> -->
+                <!-- <div id="header-rectangle" class="rectangle"></div> -->
+
+                <nav id="header-nav">
+
+                    <div id="hamburger-menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <ul id="menu-nav" class="small-res-hidden">
+                        <column class="col1of5">
+                            <li>
+                                <a href="../home_page/home_page.html"> <p>Home</p> </a>
+                            </li>
+                        </column>
+
+                        <column class="col2of5">
+                            <li>
+                                <!-- <p> -->
+                                    <!-- <img id="mbs_logo" src="images/M_B_S_Logo.jpg" alt="Image of Midlands Bird Society logo"> -->
+                                    <a href="../about_page/about_page.html"> <p>About MBS</p> </a>
+                                <!-- </p> -->
+                            </li>
+                        </column>
+
+                        <column class="col3of5">
+                            <li>
+                                <a href="../birds_page/birds_page.html"> <p>Birds</p> </a>
+                            </li>
+                        </column>
+
+                        <column class="col4of5">
+                            <li>
+                                <a href="../photography_page/photography_page.html"> <p>Photography</p> </a>
+                            </li>
+                        </column>
+
+                        <column class="col5of5">
+                            <li>
+                                <a href="../more_resources_page/more_resources_page.html"> <p>More Resources</p> </a>
+                            </li>
+                        </column>
+
+                    </ul>
+
+                </nav>
+    
+            </header>
+
+            <hr>
+            
+            <!-- Displays main title and subtitle on About MBS page -->
+            <div id="h1-title">
+                <h1>About Midlands Bird Society (MBS)</h1>
+            </div>
+
+            <div id="h2-title">
+                <h2>Meet the Host</h2>
+            </div>
+
+            <hr>
+
+            <div id="image-text-columns">
+
+                <column id="image-text-col1of2">
+
+                    <div id="about-image">
+
+                        <p>
+                            <a href="https://garnetgate.sa.sc.edu/organization/midlandsbirdsociety">
+                                
+                                <p id="link-to-gg">Link to club GarnetGate</p>
+
+                            <img id="mbs-logo-main" src="images/M_B_S_Logo.jpg" alt="Image of Midlands Bird Society logo"> 
+                        
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </column>
+
+                <column id="image-text-col2of2">
+
+                    <div id="main-about-text">
+                        <p>
+                            Midlands Bird Society is a local campus chapter of National Audubon Society dedicated to “educat[ing] students on the local birdlife of South Carolina and shar[ing] our love for birds with the wider campus community” 
+                            
+                            (<a href="https://garnetgate.sa.sc.edu/organization/midlandsbirdsociety">Source</a>).
+                        </p>
+                    </div>
+
+                </column>
+
+
+            </div>
+
+            <hr id="content-form-separation">
+
+
+            <div id="form-map-flex">
+
+                <section class="form-map-col1of2">
+
+                    <h2>Need to contact MBS?</h2>
+                    <p id="above-contact-p">Use the form below to get in touch with one of its officers.</p>
+
+                    <h3 id="contact-title">Contact Us</h3>
+
+                    <!-- Creates contact form -->
+                    <!-- (?) Correct action? -->
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="df70d577-399a-45da-9fc8-c22b5b2b505f"/>
+
+                        <p>
+                            <label for="name-input">Name:</label>
+
+                            <input 
+                                id="name-input"
+                                type="text"
+                                placeholder="First and last name"
+                                name="name-input"
+                                required
+                            />
+
+                        </p>
+
+                        <p>
+                            <label for="email-input">Email:</label>
+                            
+                            <input 
+                                id="email-input"
+                                type="email"
+                                placeholder="USC or personal email"
+                                name="email-input"
+                                required
+                            />
+
+                        </p>
+
+                        <p>
+                            <label for="message-input">Your Message:</label>
+                            
+                            <input 
+                                id="message-input"
+                                name="message-input"
+                                required
+                            />
+
+                        </p>
+
+                        <input
+                            type="hidden"
+                            name="redirect"
+                            value="https://web3forms.com/success"
+
+                        />
+
+                        <input
+                            type="hidden"
+                            name="subject"
+                            value="Contact Form Submission from CSCE 242 MBS Website"
+
+                        />
+
+                        <p>
+                            <button type="submit">Submit Form</button>
+
+                        </p>
+
+                        <p id="submission-result"></p>
+
+                    </form>
+
+                </section>
+                
+                <section class="form-map-col2of2">
+
+                    <!-- <div class="vertical-line"></div> -->
+
+                    <div id="map-text">
+
+                        <h2>Location</h2>
+                        <p>MBS is a club at the University of South Carolina.</p>
+
+                        <iframe 
+                            id="USC-google-map"
+                        
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.952184297148!2d-81.0324881598325!3d33.99376192092748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb282cb2a61b%3A0x78bd73542178f54e!2sUniversity%20of%20South%20Carolina!5e0!3m2!1sen!2sus!4v1710877652260!5m2!1sen!2sus" 
+                            width="600"
+                            height="600" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        
+                        </iframe>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+
+            <footer id="main-footer">
+
+                <!-- <img src="https://place-hold.it/1470x75" alt="Placeholder image"> --> 
+                <div id="footer-rectangle" class="rectangle"></div>
+            
+            </footer>
+
+        </div>
+
+        <!-- Links to JavaScript files--> 
+        <script src="contact_form.js"></script>
+
+    </body>
+
+
+</html>
