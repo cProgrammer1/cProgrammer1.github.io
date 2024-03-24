@@ -89,7 +89,8 @@ iframe
 .flex3-column2,
 .flex3-column3,
 .flex4-column1,
-.flex4-column2
+.flex4-column2,
+.flex4-column3
 
 {
     background-color:#25325b;
@@ -117,6 +118,7 @@ h1
 }
 
 #assignment-13-title,
+#assignment-14-title,
 #project-6-title
 {
     color: rgb(213, 125, 25);
@@ -147,7 +149,8 @@ h1
     .flex3-column2,
     .flex3-column3,
     .flex4-column1,
-    .flex4-column2
+    .flex4-column2,
+    .flex4-column3
     {
         flex: 1;
     }
