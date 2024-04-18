@@ -624,7 +624,7 @@ const deleteBird = async (bird) =>
     if(response.status != 200)
     {
         console.log("There was an error deleting the species");
-        errorPrompt(result.error);
+        // errorPrompt(result.error);
 
 
         return;
