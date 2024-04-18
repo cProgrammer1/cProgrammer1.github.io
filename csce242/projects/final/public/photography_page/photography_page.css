@@ -1,0 +1,336 @@
+/*
+    Created by Chrissy Dobrowolski 
+    Semester Project Part 7: BackEnd Implementation 
+    CSCE 242- 001 
+    Due 4.21.2024 
+    
+*/
+
+
+:root
+{
+    /* Variables: */ 
+
+    /*- Colors: */ 
+    --background-color: #F2F2F2;
+    --foreground-color: #593520;
+    --h1-color: #BF8C60;
+    --h2-color: #2e1009;
+    --p-color: #2e1009;
+    --img-header-color: #8C8A6D;
+    --form-background-color: #e0e0dd;
+    --button-color: #f2d19c;
+
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+/* Structure: */
+
+#photography-content 
+{
+    background: var(--background-color);
+
+}
+
+/* - Header: */ 
+
+#photography-header
+{
+    background-color: var(--img-header-color);
+    display: block;
+    padding-bottom: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px;
+
+}
+
+/* -- Hamburger menu */
+#hamburger-menu div
+{
+    width: 25px;
+    height: 5px;
+    background-color: var(--p-color);
+    margin: 5px 0;
+    margin-left: 5px;
+
+}
+
+.small-res-hidden
+{
+    display: none;
+
+}
+
+
+#header-nav li
+{
+    list-style-type: none;
+}
+
+#header-nav a
+{
+    text-decoration: none;
+    color: var(--p-color);
+}
+
+
+/* Shapes: */ 
+
+.rectangle
+{
+    width: 100px;
+    height: 100px;
+    
+}
+
+/*
+#header-rectangle
+{
+    width: 100%;
+    height: 100px;
+    background-color: var(--img-header-color);
+}
+*/
+
+#footer-rectangle
+{
+    width: 100%;
+    height: 75px;
+    background-color: var(--img-header-color);
+}
+
+.photos-description-text
+{
+    padding-left: 10px;
+    
+}
+
+#main-title
+{
+    color: var(--h2-color);
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 10px;
+    display: inline;
+
+}
+
+#photo-form-separation
+{
+    margin-top: 50px;
+    margin-left: 0px;
+    border-width: 3px;
+    width: 82%;
+
+}
+
+.above-photo-form-p
+{
+    padding-left: 15px;
+
+}
+
+#submit-photo-button
+{
+    color: var(--p-color);
+    font-size: 20px;
+    background-color: var(--button-color);
+    padding: 7px;
+
+}
+
+#photo-form-title
+{
+    padding-left: 15px;
+
+}
+
+#photo-form
+{
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 500px;
+    padding: 15px;
+    background-color: var(--form-background-color);
+    margin-bottom: 30px;
+
+
+}
+
+form label
+{
+    font-size: 20px;
+    display: block;
+    color: var(--p-color);
+
+}
+
+form button
+{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 200px;
+    
+
+}
+
+input,
+button,
+label
+{
+    font-size: 20px;
+    margin-left: 30px;
+
+}
+
+#description-input
+{
+    padding-bottom: 100px;
+
+}
+
+#terms-input-label
+{
+    display: inline;
+    margin-left: 0px;
+    
+
+}
+
+
+/* - Images: */ 
+
+img
+{
+    max-width: 47%;
+    padding: 10px;
+
+}
+
+#mbs_logo
+{
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+
+}
+
+#gck-photo,
+#rbw-photo
+{
+    width: 95%;
+
+}
+
+.hidden
+{
+    display: none;
+
+}
+
+/* Typography: */
+
+#h1-title
+{
+    background-color: var(--foreground-color);
+    text-align: center;
+    padding: 5px;
+}
+
+h1
+{
+    color: var(--h1-color);
+    
+}
+
+h1,
+h2,
+p
+#photography-titles p
+{
+    text-align: left;
+    padding: 10px;
+
+}
+
+#main-photography-info
+{
+    font-size: 20px;
+    padding-left: 10px;
+
+}
+
+#photo-form-results
+{
+    padding-left: 15px;
+
+}
+
+#photo-form-results-appended
+{
+    padding-left: 15px;
+    margin-bottom: 30px;
+
+}
+
+
+/* Larger Resolutions: */ 
+
+@media (min-width: 900px)
+{
+    /* -- Hamburger menu */
+    #hamburger-menu
+    {
+       display: none;
+
+    }
+
+    .small-res-hidden
+    {
+        display: block;
+
+    }
+
+    /* Flex: */
+
+    #header-nav ul
+    {
+        display: flex;
+
+    }
+
+    .col1of5,
+    .col2of5,
+    .col3of5,
+    .col4of5,
+    .col5of5
+    {
+        flex: 1;
+        padding-left: 10px;
+        padding-right: 50px;
+    }
+
+
+    /* Structure: */ 
+
+    #header-nav li
+    {
+        text-align: center;
+        
+    }
+
+
+    /* Typography */ 
+    #photography-header p
+    {
+        text-align: center;
+    }
+
+}

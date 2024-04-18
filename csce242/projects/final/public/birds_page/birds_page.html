@@ -1,0 +1,241 @@
+<!--
+    Created by Chrissy Dobrowolski 
+    Semester Project Part 7: BackEnd Implementation 
+    CSCE 242- 001 
+    Due 4.21.2024 
+    
+-->
+
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Birds</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <link rel="stylesheet" href="birds_page.css">
+
+
+    </head>
+
+    <body>
+
+        <div id="birds-content">
+
+            <header id="birds-header">
+
+                <img id="mbs_logo" src="images/M_B_S_Logo.jpg" alt="Image of Midlands Bird Society logo">
+                <h1 id="main-title">Birds of USC</h1>
+
+                <!-- <img src="https://place-hold.it/1470x150" alt="Placeholder image"> -->
+                <!-- <div id="header-rectangle" class="rectangle"></div> -->
+
+                <nav id="header-nav">
+
+                    <div id="hamburger-menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <ul id="menu-nav" class="small-res-hidden">
+                        <column class="col1of5">
+                            <li>
+                                <a href="../home_page/home_page.html"> <p>Home</p> </a>
+                            </li>
+                        </column>
+
+                        <column class="col2of5">
+                            <li>
+                                <!-- <p> -->
+                                    <!-- <img id="mbs_logo" src="images/M_B_S_Logo.jpg" alt="Image of Midlands Bird Society logo"> -->
+                                    <a href="../about_page/about_page.html"> <p>About MBS</p> </a>
+                                <!-- </p> -->
+                            </li>
+                        </column>
+
+                        <column class="col3of5">
+                            <li>
+                                <a href="../birds_page/birds_page.html"> <p>Birds</p> </a>
+                            </li>
+                        </column>
+
+                        <column class="col4of5">
+                            <li>
+                                <a href="../photography_page/photography_page.html"> <p>Photography</p> </a>
+                            </li>
+                        </column>
+
+                        <column class="col5of5">
+                            <li>
+                                <a href="../more_resources_page/more_resources_page.html"> <p>More Resources</p> </a>
+                            </li>
+                        </column>
+
+                    </ul>
+
+                </nav>
+    
+            </header>
+
+
+            <hr>
+            
+
+            <!-- Displays main title and subtitle on Home page -->
+            <div id="h1-title">
+                <h1>Birds</h1>
+            </div>
+            
+            <hr>
+            
+            <h2 id="species-title" class="inline">Species</h2>
+
+            <h1 id="form-plus-sign" class="inline"><a href="#">+</a></h1>
+
+
+            <div id="birds"></div>
+
+        
+            <!-- Modal (ORIGINAL SOURCE: https://www.w3schools.com/w3css/w3css_modal.asp) -->
+            <div id="birds-modal" class="w3-modal" >
+
+                <div class="w3-modal-content">
+                    
+                    <div class="w3-container">
+
+                        <span id="modal-close" class="w3-button w3-display-topright">&times;</span>
+
+                        <section id="modal-content">
+
+                            <form id="add-edit-bird-form" method="post" class="hidden">
+
+                                <h3 id="add-edit-bird-form-title">Add a New Species or Make Changes to a Species</h3>
+
+                                <section id="add-edit-bird-form-flex">
+                                
+                                    <section id="bird-form-text-section">
+
+                                        <p>
+                                            <label for="species_input" id="species-input-label" class="inline">Species:</label>
+                                            <input type="text" id="species_input" name="species_input" class="block" placeholder="Min: 3 characters" required/>
+
+                                        </p>
+
+                                        <p>
+                                            <label for="size_input" id="size-input-label" class="inline">Size ("Small", "Medium", or "Large"):</label>
+                                            <input type="text" id="size_input" name="size_input" class="block" placeholder="Min: 5 characters" required/>
+
+                                        </p>
+
+                                        <p id="characteristics-input-p">
+                                            <label id="characteristics-input-label" class="inline">Characteristics:</label>
+                                            <a href="#" id="add-characteristic-click">Add Characteristic</a>
+                                            
+                                            <section id="characteristics-section"></section>
+
+                                        </p>
+
+                                        <p>
+                                            <label for="diet_input" id="diet-input-label" class="inline">Diet:</label>
+                                            <input type="text" id="diet_input" name="diet_input" class="block" placeholder="Min: 3 characters" required/>
+
+                                        </p>
+
+                                        <p>
+                                            <label for="where_USC_input" id="where-USC-input-label" class="inline">Where to Find at USC:</label>
+                                            <input type="text" id="where_USC_input" name="where_USC_input" class="block" placeholder="Min: 3 characters" required/>
+
+                                        </p>
+
+                                        <p>
+                                            <label for="fun_fact_input" id="fun-fact-input-label" class="inline">Fun Fact:</label>
+                                            <input type="text" id="fun_fact_input" name="fun_fact_input" class="block" placeholder="Min: 10 characters" required/>
+
+                                        </p>
+
+                                        <p>
+                                            <label for="info_credits_input" id="info-credits-input-label" class="inline">Info Credits:</label>
+                                            <input type="text" id="info_credits_input" name="info_credits_input" class="block" placeholder="Min: 5 characters" required/>
+
+                                        </p>
+
+
+                                        <button id="cancel-form-button">Cancel</button>
+                                        <button id="save-form-button" type="submit">Save</button>
+
+                                    </section>
+
+                                    <section id="bird-form-image-section">
+
+                                        <input type="hidden" id="_id" name="_id">
+
+                                        <p id="image-preview-section">
+                                            <img id="image-preview">
+
+                                        </p>
+
+                                        <p>
+                                            <img src="https://place-hold.it/276x365" id="placeholder-preview-image" class="block" alt="Placeholder image">
+                                            
+                                            <label for="image_input" id="image-input-label" class="inline">Select an Image</label>
+                                            <input type="file" id="image_input" name="image_input" accept="image/*"/>
+
+                                        </p>
+
+                                        <p>
+                                            <label for="photo_credits_input" id="photo-credits-input-label" class="inline">Photo Credits:</label>
+                                            <input type="text" id="photo_credits_input" name="photo_credits_input" class="block" placeholder="Min: 5 characters" required/>
+
+                                        </p>
+
+                                    </section>
+
+                                </section>
+                            
+                            </form>
+
+                            <section id="expanded-image-info-section" class="hidden">
+                                <section id="expanded-image-section" class="flex-columns"></section>
+                                <section id="expanded-info-section" class="flex-columns"></section>
+                                
+                                <section id="delete-prompt" class="hidden"></section>
+                                <section id="error-prompt" class="hidden"></section>
+
+                            </section>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+                <footer id="main-footer">
+
+                    <!-- <img src="https://place-hold.it/1470x75" alt="Placeholder image"> --> 
+                    <div id="footer-rectangle" class="rectangle"></div>
+                
+                </footer>
+
+        </div>
+
+
+        <!-- Links to script.js--> 
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
+
+
+<!-- 
+
+- NOTES: 
+    - Resources: 
+        - https://www.w3schools.com/cssref/pr_font_weight.php 
+
+-->

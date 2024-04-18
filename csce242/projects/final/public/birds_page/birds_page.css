@@ -1,0 +1,427 @@
+/*
+    Created by Chrissy Dobrowolski 
+    Semester Project Part 7: BackEnd Implementation 
+    CSCE 242- 001 
+    Due 4.21.2024 
+    
+*/
+
+
+/* SMALLER RESOLUTIONS: */
+
+:root
+{
+    /* Variables: */ 
+
+   /*- Colors: */ 
+   --background-color: #F2F2F2;
+   --foreground-color: #593520;
+   --h1-color: #BF8C60;
+   --h2-color: #2e1009;
+   --p-color: #2e1009;
+   --img-header-color: #8C8A6D;
+   --form-background-color: #e0e0dd;
+   --button-color: #f2d19c;
+   --small-button-color: #efd9ba;
+
+}
+
+
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+/* Structure: */
+
+#birds-content 
+{
+    background: var(--background-color);
+
+}
+
+.inline
+{
+    display: inline;
+
+}
+
+.block
+{
+    display: block;
+
+}
+
+/* - Header: */ 
+
+#birds-header
+{
+    background-color: var(--img-header-color);
+    display: block;
+    padding-bottom: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px;
+
+}
+
+/* -- Hamburger menu */
+#hamburger-menu div
+{
+    width: 25px;
+    height: 5px;
+    background-color: var(--p-color);
+    margin: 5px 0;
+    margin-left: 5px;
+
+}
+
+.small-res-hidden
+{
+    display: none;
+
+}
+
+.hidden
+{
+    display: none;
+
+}
+
+
+#header-nav li
+{
+    list-style-type: none;
+    
+}
+
+#header-nav a
+{
+    text-decoration: none;
+    color: var(--p-color);
+
+
+}
+
+
+/* Shapes: */ 
+
+.rectangle
+{
+    width: 100px;
+    height: 100px;
+    
+}
+
+/*
+#header-rectangle
+{
+    width: 100%;
+    height: 100px;
+    background-color: var(--img-header-color);
+}
+*/
+
+#footer-rectangle
+{
+    width: 100%;
+    height: 75px;
+    background-color: var(--img-header-color);
+    margin-top: 100px;
+}
+
+#main-title
+{
+    color: var(--h2-color);
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 10px;
+    display: inline;
+
+}
+
+#add-edit-bird-form
+{
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+
+}
+
+#add-edit-bird-form-title
+{
+    font-weight: bold;
+
+}
+
+#add-edit-bird-form-title,
+#species-input-label,
+#size-input-label,
+#characteristics-input-label,
+#add-identifier-click,
+#where-USC-input-label,
+#diet-input-label,
+#fun-fact-input-label,
+#photo-credits-input-label,
+#info-credits-input-label
+{
+    color: var(--h2-color);
+
+}
+
+#bird-form-text-section
+{
+    margin-left: 20px;
+
+}
+
+#image-preview-section
+{
+    margin-right: 40px;
+
+}
+
+#image-preview
+{
+    max-width: 100%;
+
+}
+
+#bird-form-image-section
+{
+    background-color: var(--form-background-color);
+    padding-left: 60px;
+    margin-right: 43px;
+    margin-bottom: 100px;
+
+}
+
+#image_input
+{
+   display: none;
+
+}
+
+#image-input-label
+{
+    width: 100px;
+
+}
+
+#add-characteristic-click,
+#image-input-label
+{
+    color: var(--p-color);
+    font-size: 16px;
+    background-color: var(--small-button-color);
+    padding: 5px;
+    border: 1px solid #2e1009;
+    margin-left: 10px;
+
+}
+
+#cancel-form-button,
+#save-form-button,
+#yes-delete-button,
+#no-delete-button
+{
+    color: var(--p-color);
+    font-size: 18px;
+    background-color: var(--button-color);
+    padding: 7px;
+    border: 2px solid #2e1009;
+
+}
+
+#species-input-label,
+#size-input-label,
+#characteristics-input-label,
+#where-USC-input-label,
+#diet-input-label,
+#fun-fact-input-label,
+#photo-credits-input-label,
+#info-credits-input-label
+{
+    font-size: 18px;
+
+}
+
+#species_input,
+#size_input,
+#broad_identifiers_input,
+#where_USC_input,
+#fun_fact_input,
+#diet_input,
+#photo_credits_input,
+#info_credits_input
+
+{
+    padding-right: 70px;
+
+}
+
+#fun_fact_input
+{
+    padding-bottom: 30px;
+
+}
+
+#placeholder-preview-image
+{
+    /* margin-left: 200px; */
+    margin-bottom: 15px;
+    max-width: 100%;
+
+}
+
+#photo_credits_input,
+#photo-credits-input-label
+{
+    margin-left: 10px;
+
+}
+
+#characteristics-input-p a
+{
+    text-decoration: none;
+
+}
+
+
+/* - Images: */ 
+
+img
+{
+    max-width: 100%;
+    padding-left: 10px;
+
+}
+
+#mbs_logo
+{
+    width: 100px;
+    height: 100px;
+    padding-left: 0px;
+
+}
+
+h1 a
+{
+    color: var(--p-color);
+    text-decoration: none;
+    
+}
+
+
+
+/* Typography: */
+
+#h1-title
+{
+    background-color: var(--foreground-color);
+    text-align: center;
+    padding: 5px;
+}
+
+h1
+{
+    color: var(--h1-color);
+    
+}
+
+h1,
+h2
+{
+    text-align: left;
+    padding: 10px;
+
+}
+
+
+h3,
+h5
+{
+    padding-left: 10px;
+
+}
+
+#expanded-image-info-section,
+#add-edit-bird-form-flex
+{
+    display: flex;
+
+}
+
+#bird-form-text-section
+{
+    flex: 47%;
+
+}
+
+#bird-form-image-section
+{
+    flex: 53%;
+    margin-top: 15px;
+
+}
+
+
+/* LARGER RESOLUTIONS: */ 
+
+@media (min-width: 900px)
+{
+    /* -- Hamburger menu */
+    #hamburger-menu
+    {
+       display: none;
+
+    }
+
+    .small-res-hidden
+    {
+        display: block;
+
+    }
+
+
+    /* Flex: */
+
+    #header-nav ul
+    {
+        display: flex;
+        
+    }
+
+    .col1of5,
+    .col2of5,
+    .col3of5,
+    .col4of5,
+    .col5of5
+    {
+        flex: 1;
+        padding-left: 10px;
+        padding-right: 50px;
+        
+    }
+
+
+    /* Structure: */ 
+
+    #header-nav li
+    {
+        text-align: center;
+
+    }
+
+
+    /* Typography */ 
+    #birds-header p
+    {
+        text-align: center;
+
+    }
+
+}
