@@ -117,7 +117,7 @@ app.get("/about", (request, response) =>
 });
 
 // GET for Birds page 
-app.get("/about", (request, response) => 
+app.get("/birds", (request, response) => 
 {
     // Responds with file in existing directory 
     response.sendFile(__dirname + "/birds_page.html");
@@ -125,7 +125,7 @@ app.get("/about", (request, response) =>
 });
 
 // GET for Photography page 
-app.get("/about", (request, response) => 
+app.get("/photography", (request, response) => 
 {
     // Responds with file in existing directory 
     response.sendFile(__dirname + "/photography_page.html");
@@ -133,7 +133,7 @@ app.get("/about", (request, response) =>
 });
 
 // GET for More Resources page 
-app.get("/about", (request, response) => 
+app.get("/more_resources", (request, response) => 
 {
     // Responds with file in existing directory 
     response.sendFile(__dirname + "/more_resources_page.html");
