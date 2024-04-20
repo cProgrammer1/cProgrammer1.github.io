@@ -93,7 +93,9 @@ const birdSchema = new mongoose.Schema
 const Bird = mongoose.model("Bird", birdSchema);
 
 
-// GET from root 
+// GET Requests 
+
+// GET from root / for Home page 
 app.get("/", (request, response) => 
 {
     // FOR TESTING: 
@@ -102,7 +104,39 @@ app.get("/", (request, response) =>
         // response.send(testArray);
 
     // Responds with file in existing directory 
-    response.sendFile(__dirname + "/index.html");
+    response.sendFile(__dirname + "/home_page.html");
+
+});
+
+// GET for About page 
+app.get("/about", (request, response) => 
+{
+    // Responds with file in existing directory 
+    response.sendFile(__dirname + "/about_page.html");
+
+});
+
+// GET for Birds page 
+app.get("/about", (request, response) => 
+{
+    // Responds with file in existing directory 
+    response.sendFile(__dirname + "/birds_page.html");
+
+});
+
+// GET for Photography page 
+app.get("/about", (request, response) => 
+{
+    // Responds with file in existing directory 
+    response.sendFile(__dirname + "/photography_page.html");
+
+});
+
+// GET for More Resources page 
+app.get("/about", (request, response) => 
+{
+    // Responds with file in existing directory 
+    response.sendFile(__dirname + "/more_resources_page.html");
 
 });
 
