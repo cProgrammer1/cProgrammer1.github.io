@@ -782,8 +782,6 @@ document.getElementById("modal-close").onclick = () =>
     // console.log("Clicked");
     document.getElementById("birds-modal").style.display = "none";
     
-    document.getElementById("add-edit-bird-form").style.display = "none";
-    
     document.querySelectorAll("#expanded-image-info-section > *").forEach((item) =>
     {
         item.classList.add("hidden");
@@ -822,19 +820,6 @@ document.getElementById("cancel-form-button").onclick = () =>
     document.getElementById("birds-modal").style.display = "none";
 
 };
-
-// document.getElementById("modal-close").onclick = () =>
-// {
-//     // console.log("Clicked");
-//     document.getElementById("birds-modal").style.display = "none";
-    
-//     document.querySelectorAll("#expanded-image-info-section > *").forEach((item) =>
-//     {
-//         item.classList.add("hidden");
-
-//     });
-
-// };
 
 
 

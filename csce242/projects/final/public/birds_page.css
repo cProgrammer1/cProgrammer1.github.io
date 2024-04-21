@@ -452,6 +452,14 @@ h5
 
     }
 
+    .small-bird-section, 
+    .medium-bird-section,
+    .large-bird-section
+    {
+        flex: 30%;
+
+    }
+
 
     /* Structure: */ 
 
