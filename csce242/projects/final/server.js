@@ -293,6 +293,8 @@ app.delete("/api/birds/:id", async (request, response) =>
 
 function validateBird(bird)
 {
+    console.log("Inside validate");
+
     const schema = joi.object
     ({
         // Can be empty or full if editing existing bird 
