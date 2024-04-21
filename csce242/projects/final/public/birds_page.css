@@ -446,6 +446,12 @@ h5
         
     }
 
+    .birds-container
+    {
+        display: flex;
+
+    }
+
 
     /* Structure: */ 
 
