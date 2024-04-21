@@ -530,7 +530,7 @@ const addEditBird = async (event) =>
     console.log(...AddEditBirdFormData);
 
     // If adding bird 
-    if(AddEditBirdForm._id.value.trim() == "1")
+    if(AddEditBirdForm._id.value.trim() == "")
     {   
         console.log("Adding bird (POST)")
 

@@ -310,7 +310,7 @@ function validateBird(bird)
         info_credits: joi.string().min(5).required(),
 
         // NOTE: Image not required since some birds species may have been spotted and confirmed, but not adequately photographed yet 
-        image_input: joi.allow(""),
+        // image_input: joi.allow(""),
 
     });
 
