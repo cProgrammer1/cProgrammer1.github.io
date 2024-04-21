@@ -189,7 +189,7 @@ const showBirds = async() =>
                 expandedBirdPhotoCreditsP.innerHTML = bird.photo_credits;
                 expandedInfoSection.append(expandedBirdPhotoCreditsP);
 
-                editPencilLink.onclick = showAddBirdForm;
+                editPencilLink.onclick = showAddEditBirdForm;
                 
                 deleteXLink.onclick = (event) => 
                 {
@@ -302,7 +302,7 @@ const showBirds = async() =>
                 expandedBirdPhotoCreditsP.innerHTML = bird.photo_credits;
                 expandedInfoSection.append(expandedBirdPhotoCreditsP);
 
-                editPencilLink.onclick = showAddBirdForm;
+                editPencilLink.onclick = showAddEditBirdForm;
                 
                 deleteXLink.onclick = (event) => 
                 {
@@ -416,7 +416,7 @@ const showBirds = async() =>
                 expandedBirdPhotoCreditsP.innerHTML = bird.photo_credits;
                 expandedInfoSection.append(expandedBirdPhotoCreditsP);
 
-                editPencilLink.onclick = showAddBirdForm;
+                editPencilLink.onclick = showAddEditBirdForm;
                 
                 deleteXLink.onclick = (event) => 
                 {
