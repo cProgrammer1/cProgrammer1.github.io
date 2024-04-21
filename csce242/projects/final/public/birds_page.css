@@ -55,6 +55,12 @@ body
 
 }
 
+.shifted
+{
+    margin-left: 15px;
+
+}
+
 /* - Header: */ 
 
 #birds-header

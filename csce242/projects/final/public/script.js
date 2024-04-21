@@ -112,13 +112,12 @@ const showBirds = async() =>
             birdImage.src = "images/" + bird.image;
             birdImage.classList.add("block");
             birdImage.classList.add("initial-image-preview");
-
-            const BirdPhotoCredits = document.createElement("h4");
-            BirdPhotoCredits.innerHTML = bird.photo_credits;
-            smallBirdSection.append(BirdPhotoCredits);
-
-            // Appends to smallBirdSection 
             smallBirdSection.append(birdImage);
+
+            const BirdPhotoCredits = document.createElement("h5");
+            BirdPhotoCredits.innerHTML = bird.photo_credits;
+            BirdPhotoCredits.classList.add("shifted");
+            smallBirdSection.append(BirdPhotoCredits);
 
             birdImage.onclick = (event) =>
             {
@@ -143,6 +142,7 @@ const showBirds = async() =>
 
                 const deleteXLink = document.createElement("a");
                 deleteXLink.innerHTML = "X";
+                deleteXLink.classList.add("shifted");
                 expandedInfoSection.append(deleteXLink);
                 deleteXLink.id = "delete-x-link";
 
@@ -150,6 +150,7 @@ const showBirds = async() =>
                 const expandedBirdSizeTitle = document.createElement("h5")
                 expandedBirdSizeTitle.innerHTML = "Size:"
                 const expandedBirdSizeP = document.createElement("p");
+                expandedBirdSizeP.classList.add("shifted");
                 expandedBirdSizeP.innerHTML = bird.size;
                 expandedInfoSection.append(expandedBirdSizeTitle, expandedBirdSizeP);
 
@@ -176,24 +177,28 @@ const showBirds = async() =>
                 expandedBirdDietTitle.innerHTML = "Diet:"
                 const expandedBirdDietP = document.createElement("p");
                 expandedBirdDietP.innerHTML = bird.diet;
+                expandedBirdDietP.classList.add("shifted");
                 expandedInfoSection.append(expandedBirdDietTitle, expandedBirdDietP);
 
                 const expandedBirdWhereTitle = document.createElement("h5")
                 expandedBirdWhereTitle.innerHTML = "Where to Find at USC:"
                 const expandedBirdWhereP = document.createElement("p");
                 expandedBirdWhereP.innerHTML = bird.where_USC;
+                expandedBirdWhereP.classList.add("shifted");
                 expandedInfoSection.append(expandedBirdWhereTitle, expandedBirdWhereP);
 
                 const expandedBirdFactTitle = document.createElement("h5")
                 expandedBirdFactTitle.innerHTML = "Fun Fact:"
                 const expandedBirdFactP = document.createElement("p");
                 expandedBirdFactP.innerHTML = bird.fun_fact;
+                expandedBirdFactP.classList.add("shifted");
                 expandedInfoSection.append(expandedBirdFactTitle, expandedBirdFactP);
 
                 const expandedBirdInfoCreditsTitle = document.createElement("h5")
                 expandedBirdInfoCreditsTitle.innerHTML = "Info Credits:"
                 const expandedBirdInfoCreditsP = document.createElement("p");
                 expandedBirdInfoCreditsP.innerHTML = bird.info_credits;
+                expandedBirdInfoCreditsP.classList.add("shifted");
                 expandedInfoSection.append(expandedBirdInfoCreditsTitle, expandedBirdInfoCreditsP);
 
 
@@ -209,6 +214,7 @@ const showBirds = async() =>
                 expandedBirdPhotoCreditsTitle.innerHTML = "Photo Credits:"
                 const expandedBirdPhotoCreditsP = document.createElement("p");
                 expandedBirdPhotoCreditsP.innerHTML = bird.photo_credits;
+                expandedBirdPhotoCreditsP.classList.add("shifted");
                 expandedInfoSection.append(expandedBirdPhotoCreditsTitle, expandedBirdPhotoCreditsP);
 
                 editPencilLink.onclick = showAddEditBirdForm;
