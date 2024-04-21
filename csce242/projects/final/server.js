@@ -300,17 +300,17 @@ function validateBird(bird)
         // Can be empty or full if editing existing bird 
         _id: joi.allow(""),
 
-        species: joi.string().min(3).required(),
-        photo_credits: joi.string().min(5).required(),
-        size: joi.string().min(5).required(),
+        species_input: joi.string().min(3).required(),
+        photo_credits_input: joi.string().min(5).required(),
+        size_input: joi.string().min(5).required(),
         characteristics: joi.allow(""),
-        diet: joi.string().min(3).required(),
-        where_USC: joi.string().min(3).required(),
-        fun_fact: joi.string().min(10).required(),
-        info_credits: joi.string().min(5).required(),
+        diet_input: joi.string().min(3).required(),
+        where_USC_input: joi.string().min(3).required(),
+        fun_fact_input: joi.string().min(10).required(),
+        info_credits_input: joi.string().min(5).required(),
 
         // NOTE: Image not required since some birds species may have been spotted and confirmed, but not adequately photographed yet 
-        // image_input: joi.allow(""),
+        image_input: joi.allow(""),
 
     });
 
