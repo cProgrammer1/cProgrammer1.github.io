@@ -364,13 +364,16 @@ h5
 
 }
 
-/* 
-#expanded-image-info-section
+/* FIX HAMBURGER MENU */
+
+
+#expanded-info-section,
+#expanded-image-section
 {
-    background-color: gray;
-    
-} 
-*/
+    flex: 50%;
+
+}
+
 
 #bird-form-text-section
 {
