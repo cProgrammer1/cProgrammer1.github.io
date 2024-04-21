@@ -186,7 +186,8 @@ body
 
 #image-preview-section
 {
-    margin-right: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
 
 }
 
@@ -354,11 +355,17 @@ h5
 
 }
 
-#expanded-image-info-section,
+/* #expanded-image-info-section, */
 #add-edit-bird-form-flex
 {
     display: flex;
 
+}
+
+#expanded-image-info-section
+{
+    background-color: gray;
+    
 }
 
 #bird-form-text-section
