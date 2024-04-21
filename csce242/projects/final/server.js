@@ -201,9 +201,14 @@ app.post("/api/birds", upload.single("image_input"), async (request, response) =
     const newBird = new Bird
     ({
         // _id: birds.length,
-        name: request.body.name_input,
-        description: request.body.description_input,
-        supplies: request.body.supplies.split(",") // Splits comma-separated items in array 
+        species: request.body.species_input,
+        photo_credits: request.body.photo_credits_input,
+        size: request.body.size_input,
+        characteristics: request.body.characteristics.split(","), // Splits comma-separated items in array 
+        diet: request.body.diet_input,
+        where_USC: request.body.where_USC_input,
+        fun_fact: request.body.fun_fact_input,
+        info_credits: request.body.info_credits_input,
 
     });
 
