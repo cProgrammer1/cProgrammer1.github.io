@@ -186,16 +186,18 @@ body
 
 #image-preview-section
 {
-    margin-top: 20px;
     margin-right: 20px;
 
 }
 
 #image-preview
 {
+    margin-top: 20px;
     max-width: 100%;
 
 }
+
+
 
 #bird-form-image-section
 {
@@ -380,6 +382,15 @@ h5
 {
     flex: 53%;
     margin-top: 15px;
+
+}
+
+#expanded-image-section
+{
+    background-color: var(--form-background-color);
+    padding-left: 60px;
+    margin-right: 43px;
+    margin-bottom: 100px;
 
 }
 

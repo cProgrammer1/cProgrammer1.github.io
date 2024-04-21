@@ -215,7 +215,7 @@ const showBirds = async() =>
                 const expandedBirdPhotoCreditsP = document.createElement("p");
                 expandedBirdPhotoCreditsP.innerHTML = bird.photo_credits;
                 expandedBirdPhotoCreditsP.classList.add("shifted");
-                expandedInfoSection.append(expandedBirdPhotoCreditsTitle, expandedBirdPhotoCreditsP);
+                expandedImageSection.append(expandedBirdPhotoCreditsTitle, expandedBirdPhotoCreditsP);
 
                 editPencilLink.onclick = showAddEditBirdForm;
                 
