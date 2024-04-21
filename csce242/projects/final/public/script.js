@@ -49,6 +49,8 @@ const showBirds = async() =>
 {
     birdsJSON = await getBirds();
 
+    console.log(birdsJSON);
+
     const birdsDiv = document.getElementById("birds");
     birdsDiv.innerHTML = "";
 
@@ -528,7 +530,7 @@ const addEditBird = async (event) =>
     console.log(...AddEditBirdFormData);
 
     // If adding bird 
-    if(AddEditBirdForm._id.value.trim() == "")
+    if(AddEditBirdForm._id.value.trim() == "1")
     {   
         console.log("Adding bird (POST)")
 
