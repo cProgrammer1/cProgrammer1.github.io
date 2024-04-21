@@ -693,9 +693,9 @@ populateAddEditBirdForm = (bird) =>
 {
     const AddEditBirdForm = document.getElementById("add-edit-bird-form");
 
-    AddEditBirdForm._id.value =  bird._id;
-    AddEditBirdForm.species_input.value = bird.name;
-    AddEditBirdForm.size_input = bird.size;
+    AddEditBirdForm._id.value = bird._id;
+    AddEditBirdForm.species_input.value = bird.species;
+    AddEditBirdForm.size_input.value = bird.size;
     // AddEditBirdForm.characteristics_input = bird.characteristics;
     AddEditBirdForm.diet_input.value = bird.diet;
     AddEditBirdForm.where_USC_input.value = bird.where_USC;
