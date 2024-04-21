@@ -208,6 +208,7 @@ const showBirds = async() =>
                 const expandedBirdImage = document.createElement("img");
                 expandedBirdImage.classList.add("expanded-bird-image");
                 expandedBirdImage.src = "images/" + bird.image;
+                expandedBirdImage.classList.add("image-shifted");
                 expandedImageSection.append(expandedBirdImage);
 
                 const expandedBirdPhotoCreditsTitle = document.createElement("h5")
