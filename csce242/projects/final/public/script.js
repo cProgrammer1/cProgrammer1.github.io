@@ -821,15 +821,6 @@ document.getElementById("cancel-form-button").onclick = () =>
 
 };
 
-document.getElementById("hamburger-menu").onclick = () =>
-{
-    console.log("Hamburger menu clicked");
-
-    document.getElementById("menu-nav").classList.toggle("small-res-hidden");
-
-    
-};
-
 
 
 /*
